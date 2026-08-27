@@ -1,4 +1,4 @@
-# Resume Bullet Point Improver
+# VitaeAI
 
 A production-ready Next.js 14 application that uses AI to transform your resume bullet points into impactful, professional statements using the Google X–Y–Z formula.
 
