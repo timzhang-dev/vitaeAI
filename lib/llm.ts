@@ -139,7 +139,7 @@ async function callOpenAI(
  * Groq API implementation
  */
 async function callGroq(prompt: string, config: LLMConfig): Promise<LLMResponse> {
-  const model = config.model || 'llama-3.1-8b-instant';
+  const model = config.model || 'openai/gpt-oss-20b';
   const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
     headers: {
