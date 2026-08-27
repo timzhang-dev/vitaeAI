@@ -138,7 +138,7 @@ The application follows a simple but powerful workflow:
 
 The application uses a carefully crafted prompt that instructs the AI to:
 - Follow the **X–Y–Z formula**: "Accomplished X by doing Y resulting in Z"
-- Add **realistic, quantifiable metrics** (percentages, dollar amounts, time, scale, volume)
+- Includes **quantifiable metrics** (percentages, dollar amounts, time, scale, volume)
 - Use **strong action verbs** and technical language
 - Keep output to **one concise line**
 - Return **only the bullet point** (no explanations or formatting)
