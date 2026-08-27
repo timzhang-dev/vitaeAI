@@ -8,7 +8,6 @@ A production-ready Next.js 14 application that uses AI to transform your resume 
 
 - 🤖 **AI-Powered Improvements**: Uses advanced LLM models (OpenAI, Groq, or Hugging Face) to enhance resume bullets
 - 📊 **X–Y–Z Formula**: Applies the Google X–Y–Z formula: "Accomplished X by doing Y resulting in Z"
-- 📈 **Quantifiable Metrics**: Automatically adds realistic metrics (%, $, time, scale, volume)
 - 🔒 **Secure**: All API calls happen server-side with no exposed keys
 - 💾 **Persistent Storage**: Automatically saves all requests to Supabase database
 - 🎨 **Modern UI**: Clean, responsive interface with loading states and error handling
@@ -127,7 +126,6 @@ The application follows a simple but powerful workflow:
 2. **API Call**: Frontend sends the text to `/api/improve` endpoint via POST request
 3. **AI Processing**: Server calls the configured LLM API (OpenAI/Groq/Hugging Face) with a specialized prompt that:
    - Applies the Google X–Y–Z formula
-   - Adds quantifiable metrics
    - Uses strong action verbs
    - Ensures professional, concise output
 4. **Response Cleaning**: Server removes any prefixes, quotation marks, or formatting artifacts
@@ -138,7 +136,6 @@ The application follows a simple but powerful workflow:
 
 The application uses a carefully crafted prompt that instructs the AI to:
 - Follow the **X–Y–Z formula**: "Accomplished X by doing Y resulting in Z"
-- Includes **quantifiable metrics** (percentages, dollar amounts, time, scale, volume)
 - Use **strong action verbs** and technical language
 - Keep output to **one concise line**
 - Return **only the bullet point** (no explanations or formatting)
@@ -150,18 +147,6 @@ The application uses a carefully crafted prompt that instructs the AI to:
 - ✅ Input validation on both client and server
 - ✅ Error handling with graceful fallbacks
 - ✅ Supabase uses Row Level Security (RLS) for database access
-
-## 📝 Example
-
-**Input:**
-```
-Worked on a project that increased sales
-```
-
-**Output:**
-```
-Developed and integrated Large Language Models (LLMs) to automate 30% of tasks, streamlining workflow for commercial real estate firm and reducing project cycle time by 25%.
-```
 
 ## 🚢 Deployment
 
