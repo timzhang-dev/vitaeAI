@@ -155,7 +155,8 @@ async function callGroq(prompt: string, config: LLMConfig): Promise<LLMResponse>
         },
       ],
       temperature: 0.7,
-      max_tokens: 200,
+      max_completion_tokens: 500,
+      reasoning_effort: 'low',
     }),
   });
 
